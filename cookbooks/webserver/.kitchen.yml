@@ -1,0 +1,27 @@
+---
+driver:
+  name: ec2
+  aws_ssh_key_id: chef-coe-ind
+  security_group_ids: ["sg-db4fa7b0"]
+  region: ap-south-1
+  availability_zone: a
+  require_chef_omnibus: true
+  instance_type: t2.micro
+  associate_public_ip: true
+  subnet_id: subnet-d81893b1
+
+provisioner:
+  name: chef_zero
+
+platforms:
+  - name: ubuntu-14.04
+    driver:
+      image_id: ami-46eea129
+    transport:
+      ssh_key: /root/chef-repo/.chef/pun-chef-ind.pem
+      username: ubuntu
+
+suites:
+  - name: webserver
+    run_list:
+    - recipe[webserver::default]

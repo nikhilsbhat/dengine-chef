@@ -1,0 +1,232 @@
+I, [2018-06-21T10:36:01.451597 #28967]  INFO -- webserver-ubuntu-1404: -----> Cleaning up any prior instances of <webserver-ubuntu-1404>
+I, [2018-06-21T10:36:01.451971 #28967]  INFO -- webserver-ubuntu-1404: -----> Destroying <webserver-ubuntu-1404>...
+I, [2018-06-21T10:36:02.666128 #28967]  INFO -- webserver-ubuntu-1404: EC2 instance <i-0a09ae8843b368600> destroyed.
+I, [2018-06-21T10:36:02.666788 #28967]  INFO -- webserver-ubuntu-1404: Finished destroying <webserver-ubuntu-1404> (0m1.21s).
+I, [2018-06-21T10:36:02.667464 #28967]  INFO -- webserver-ubuntu-1404: -----> Testing <webserver-ubuntu-1404>
+I, [2018-06-21T10:36:02.667547 #28967]  INFO -- webserver-ubuntu-1404: -----> Creating <webserver-ubuntu-1404>...
+I, [2018-06-21T10:36:02.944100 #28967]  INFO -- webserver-ubuntu-1404: Detected platform: ubuntu version 14.04 on x86_64. Instance Type: t2.micro. Default username: ubuntu (default).
+I, [2018-06-21T10:36:02.944259 #28967]  INFO -- webserver-ubuntu-1404: If you are not using an account that qualifies under the AWS
+free-tier, you may be charged to run these suites. The charge
+should be minimal, but neither Test Kitchen nor its maintainers
+are responsible for your incurred costs.
+
+I, [2018-06-21T10:36:03.945160 #28967]  INFO -- webserver-ubuntu-1404: Instance <i-0ad050f69e285838b> requested.
+I, [2018-06-21T10:36:03.945314 #28967]  INFO -- webserver-ubuntu-1404: Polling AWS for existence, attempt 0...
+I, [2018-06-21T10:36:04.284737 #28967]  INFO -- webserver-ubuntu-1404: Attempting to tag the instance, 0 retries
+I, [2018-06-21T10:36:04.902150 #28967]  INFO -- webserver-ubuntu-1404: EC2 instance <i-0ad050f69e285838b> created.
+I, [2018-06-21T10:36:04.902307 #28967]  INFO -- webserver-ubuntu-1404: Waited 0/300s for instance <i-0ad050f69e285838b> volumes to be ready.
+I, [2018-06-21T10:36:06.299336 #28967]  INFO -- webserver-ubuntu-1404: Waited 0/300s for instance <i-0ad050f69e285838b> to become ready.
+I, [2018-06-21T10:36:11.841634 #28967]  INFO -- webserver-ubuntu-1404: Waited 5/300s for instance <i-0ad050f69e285838b> to become ready.
+I, [2018-06-21T10:36:18.118936 #28967]  INFO -- webserver-ubuntu-1404: Waited 10/300s for instance <i-0ad050f69e285838b> to become ready.
+I, [2018-06-21T10:36:24.397407 #28967]  INFO -- webserver-ubuntu-1404: Waited 15/300s for instance <i-0ad050f69e285838b> to become ready.
+I, [2018-06-21T10:36:30.652502 #28967]  INFO -- webserver-ubuntu-1404: Waited 20/300s for instance <i-0ad050f69e285838b> to become ready.
+I, [2018-06-21T10:36:31.558831 #28967]  INFO -- webserver-ubuntu-1404: EC2 instance <i-0ad050f69e285838b> ready (hostname: ec2-35-154-184-135.ap-south-1.compute.amazonaws.com).
+I, [2018-06-21T10:36:36.409321 #28967]  INFO -- webserver-ubuntu-1404: [SSH] Established
+I, [2018-06-21T10:36:37.122224 #28967]  INFO -- webserver-ubuntu-1404: Finished creating <webserver-ubuntu-1404> (0m34.45s).
+I, [2018-06-21T10:36:37.122351 #28967]  INFO -- webserver-ubuntu-1404: -----> Converging <webserver-ubuntu-1404>...
+I, [2018-06-21T10:36:37.122727 #28967]  INFO -- webserver-ubuntu-1404: Preparing files for transfer
+I, [2018-06-21T10:36:37.122826 #28967]  INFO -- webserver-ubuntu-1404: Preparing dna.json
+I, [2018-06-21T10:36:37.123046 #28967]  INFO -- webserver-ubuntu-1404: Preparing current project directory as a cookbook
+I, [2018-06-21T10:36:37.137427 #28967]  INFO -- webserver-ubuntu-1404: Removing non-cookbook files before transfer
+I, [2018-06-21T10:36:37.138423 #28967]  INFO -- webserver-ubuntu-1404: Preparing validation.pem
+I, [2018-06-21T10:36:37.138679 #28967]  INFO -- webserver-ubuntu-1404: Preparing client.rb
+I, [2018-06-21T10:36:37.810049 #28967]  INFO -- webserver-ubuntu-1404: -----> Installing Chef Omnibus (install only if missing)
+I, [2018-06-21T10:36:37.810390 #28967]  INFO -- webserver-ubuntu-1404: Downloading https://omnitruck.chef.io/install.sh to file /tmp/install.sh
+I, [2018-06-21T10:36:37.810554 #28967]  INFO -- webserver-ubuntu-1404: Trying wget...
+I, [2018-06-21T10:36:38.180443 #28967]  INFO -- webserver-ubuntu-1404: Download complete.
+I, [2018-06-21T10:36:38.190857 #28967]  INFO -- webserver-ubuntu-1404: ubuntu 14.04 x86_64
+I, [2018-06-21T10:36:38.191087 #28967]  INFO -- webserver-ubuntu-1404: Getting information for chef stable  for ubuntu...
+I, [2018-06-21T10:36:38.191359 #28967]  INFO -- webserver-ubuntu-1404: downloading https://omnitruck.chef.io/stable/chef/metadata?v=&p=ubuntu&pv=14.04&m=x86_64
+I, [2018-06-21T10:36:38.191524 #28967]  INFO -- webserver-ubuntu-1404:   to file /tmp/install.sh.1377/metadata.txt
+I, [2018-06-21T10:36:38.191669 #28967]  INFO -- webserver-ubuntu-1404: trying wget...
+I, [2018-06-21T10:36:39.246434 #28967]  INFO -- webserver-ubuntu-1404: sha1	9ff54d5fb2fcb9b55bc63f839d9191b7090c13b9
+I, [2018-06-21T10:36:39.246778 #28967]  INFO -- webserver-ubuntu-1404: sha256	5b30b14b6b783f01f97a63fe4274587dd2ef64c6286e97fafa93b10ec4c9785e
+I, [2018-06-21T10:36:39.460628 #28967]  INFO -- webserver-ubuntu-1404: url	https://packages.chef.io/files/stable/chef/14.2.0/ubuntu/14.04/chef_14.2.0-1_amd64.deb
+I, [2018-06-21T10:36:39.460935 #28967]  INFO -- webserver-ubuntu-1404: version	14.2.0
+I, [2018-06-21T10:36:39.461140 #28967]  INFO -- webserver-ubuntu-1404: downloaded metadata file looks valid...
+I, [2018-06-21T10:36:39.461322 #28967]  INFO -- webserver-ubuntu-1404: downloading https://packages.chef.io/files/stable/chef/14.2.0/ubuntu/14.04/chef_14.2.0-1_amd64.deb
+I, [2018-06-21T10:36:39.461474 #28967]  INFO -- webserver-ubuntu-1404:   to file /tmp/install.sh.1377/chef_14.2.0-1_amd64.deb
+I, [2018-06-21T10:36:39.461650 #28967]  INFO -- webserver-ubuntu-1404: trying wget...
+I, [2018-06-21T10:36:43.349259 #28967]  INFO -- webserver-ubuntu-1404: Comparing checksum with sha256sum...
+I, [2018-06-21T10:36:43.629137 #28967]  INFO -- webserver-ubuntu-1404: 
+I, [2018-06-21T10:36:43.629420 #28967]  INFO -- webserver-ubuntu-1404: WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING
+I, [2018-06-21T10:36:43.629563 #28967]  INFO -- webserver-ubuntu-1404: 
+I, [2018-06-21T10:36:43.629720 #28967]  INFO -- webserver-ubuntu-1404: You are installing an omnibus package without a version pin.  If you are installing
+I, [2018-06-21T10:36:43.629921 #28967]  INFO -- webserver-ubuntu-1404: on production servers via an automated process this is DANGEROUS and you will
+I, [2018-06-21T10:36:43.630131 #28967]  INFO -- webserver-ubuntu-1404: be upgraded without warning on new releases, even to new major releases.
+I, [2018-06-21T10:36:43.843435 #28967]  INFO -- webserver-ubuntu-1404: Letting the version float is only appropriate in desktop, test, development or
+I, [2018-06-21T10:36:43.843711 #28967]  INFO -- webserver-ubuntu-1404: CI/CD environments.
+I, [2018-06-21T10:36:43.843829 #28967]  INFO -- webserver-ubuntu-1404: 
+I, [2018-06-21T10:36:43.843981 #28967]  INFO -- webserver-ubuntu-1404: WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING
+I, [2018-06-21T10:36:43.844096 #28967]  INFO -- webserver-ubuntu-1404: 
+I, [2018-06-21T10:36:43.844262 #28967]  INFO -- webserver-ubuntu-1404: Installing chef 
+I, [2018-06-21T10:36:43.844405 #28967]  INFO -- webserver-ubuntu-1404: installing with dpkg...
+I, [2018-06-21T10:36:43.844562 #28967]  INFO -- webserver-ubuntu-1404: Selecting previously unselected package chef.
+I, [2018-06-21T10:36:43.845549 #28967]  INFO -- webserver-ubuntu-1404: (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 51283 files and directories currently installed.)
+I, [2018-06-21T10:36:43.845730 #28967]  INFO -- webserver-ubuntu-1404: Preparing to unpack .../chef_14.2.0-1_amd64.deb ...
+I, [2018-06-21T10:36:43.845874 #28967]  INFO -- webserver-ubuntu-1404: Unpacking chef (14.2.0-1) ...
+I, [2018-06-21T10:36:48.441538 #28967]  INFO -- webserver-ubuntu-1404: Setting up chef (14.2.0-1) ...
+I, [2018-06-21T10:36:48.497935 #28967]  INFO -- webserver-ubuntu-1404: Thank you for installing Chef!
+I, [2018-06-21T10:36:49.240148 #28967]  INFO -- webserver-ubuntu-1404: Transferring files to <webserver-ubuntu-1404>
+I, [2018-06-21T10:36:57.499605 #28967]  INFO -- webserver-ubuntu-1404: Starting Chef Client, version 14.2.0
+I, [2018-06-21T10:36:58.443760 #28967]  INFO -- webserver-ubuntu-1404: Creating a new client identity for webserver-ubuntu-1404 using the validator key.
+I, [2018-06-21T10:36:58.511176 #28967]  INFO -- webserver-ubuntu-1404: resolving cookbooks for run list: ["webserver::default"]
+I, [2018-06-21T10:36:58.515853 #28967]  INFO -- webserver-ubuntu-1404: [2018-06-21T10:39:19+00:00] ERROR: #<ArgumentError: Malformed version number string 0.12.>
+I, [2018-06-21T10:36:58.516054 #28967]  INFO -- webserver-ubuntu-1404: /opt/chef/embedded/lib/ruby/2.5.0/rubygems/version.rb:208:in `initialize'
+I, [2018-06-21T10:36:58.516249 #28967]  INFO -- webserver-ubuntu-1404: /opt/chef/embedded/lib/ruby/2.5.0/rubygems/version.rb:199:in `new'
+I, [2018-06-21T10:36:58.658037 #28967]  INFO -- webserver-ubuntu-1404: /opt/chef/embedded/lib/ruby/2.5.0/rubygems/version.rb:199:in `new'
+I, [2018-06-21T10:36:58.658255 #28967]  INFO -- webserver-ubuntu-1404: /opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-zero-14.0.6/lib/chef_zero/endpoints/environment_cookbook_versions_endpoint.rb:108:in `block in sort_versions'
+I, [2018-06-21T10:36:58.658468 #28967]  INFO -- webserver-ubuntu-1404: /opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-zero-14.0.6/lib/chef_zero/endpoints/environment_cookbook_versions_endpoint.rb:108:in `each'
+I, [2018-06-21T10:36:58.658661 #28967]  INFO -- webserver-ubuntu-1404: /opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-zero-14.0.6/lib/chef_zero/endpoints/environment_cookbook_versions_endpoint.rb:108:in `sort_by'
+I, [2018-06-21T10:36:58.658825 #28967]  INFO -- webserver-ubuntu-1404: /opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-zero-14.0.6/lib/chef_zero/endpoints/environment_cookbook_versions_endpoint.rb:108:in `sort_versions'
+I, [2018-06-21T10:36:58.659009 #28967]  INFO -- webserver-ubuntu-1404: /opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-zero-14.0.6/lib/chef_zero/endpoints/environment_cookbook_versions_endpoint.rb:71:in `depsolve'
+I, [2018-06-21T10:36:58.659190 #28967]  INFO -- webserver-ubuntu-1404: /opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-zero-14.0.6/lib/chef_zero/endpoints/environment_cookbook_versions_endpoint.rb:37:in `post'
+I, [2018-06-21T10:36:58.659357 #28967]  INFO -- webserver-ubuntu-1404: /opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-zero-14.0.6/lib/chef_zero/rest_base.rb:59:in `call'
+I, [2018-06-21T10:36:58.659499 #28967]  INFO -- webserver-ubuntu-1404: /opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-zero-14.0.6/lib/chef_zero/rest_router.rb:24:in `call'
+I, [2018-06-21T10:36:58.659715 #28967]  INFO -- webserver-ubuntu-1404: /opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-zero-14.0.6/lib/chef_zero/server.rb:665:in `block in app'
+I, [2018-06-21T10:36:58.659860 #28967]  INFO -- webserver-ubuntu-1404: /opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-zero-14.0.6/lib/chef_zero/server.rb:336:in `handle_socketless_request'
+I, [2018-06-21T10:36:58.660047 #28967]  INFO -- webserver-ubuntu-1404: /opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-zero-14.0.6/lib/chef_zero/socketless_server_map.rb:87:in `request'
+I, [2018-06-21T10:36:58.660190 #28967]  INFO -- webserver-ubuntu-1404: /opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-zero-14.0.6/lib/chef_zero/socketless_server_map.rb:33:in `request'
+I, [2018-06-21T10:36:58.660347 #28967]  INFO -- webserver-ubuntu-1404: /opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.2.0/lib/chef/http/socketless_chef_zero_client.rb:154:in `request'
+I, [2018-06-21T10:36:58.660579 #28967]  INFO -- webserver-ubuntu-1404: /opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.2.0/lib/chef/http.rb:372:in `block in send_http_request'
+I, [2018-06-21T10:36:58.660725 #28967]  INFO -- webserver-ubuntu-1404: /opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.2.0/lib/chef/http.rb:411:in `block in retrying_http_errors'
+I, [2018-06-21T10:36:58.660941 #28967]  INFO -- webserver-ubuntu-1404: /opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.2.0/lib/chef/http.rb:409:in `loop'
+I, [2018-06-21T10:36:58.661092 #28967]  INFO -- webserver-ubuntu-1404: /opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.2.0/lib/chef/http.rb:409:in `retrying_http_errors'
+I, [2018-06-21T10:36:58.661277 #28967]  INFO -- webserver-ubuntu-1404: /opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.2.0/lib/chef/http.rb:365:in `send_http_request'
+I, [2018-06-21T10:36:58.661421 #28967]  INFO -- webserver-ubuntu-1404: /opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.2.0/lib/chef/http.rb:149:in `request'
+I, [2018-06-21T10:36:58.661561 #28967]  INFO -- webserver-ubuntu-1404: /opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.2.0/lib/chef/http.rb:131:in `post'
+I, [2018-06-21T10:36:58.661736 #28967]  INFO -- webserver-ubuntu-1404: /opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.2.0/lib/chef/policy_builder/expand_node_object.rb:177:in `sync_cookbooks'
+I, [2018-06-21T10:36:58.661881 #28967]  INFO -- webserver-ubuntu-1404: /opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.2.0/lib/chef/policy_builder/expand_node_object.rb:83:in `setup_run_context'
+I, [2018-06-21T10:36:58.662069 #28967]  INFO -- webserver-ubuntu-1404: /opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.2.0/lib/chef/client.rb:512:in `setup_run_context'
+I, [2018-06-21T10:36:58.662230 #28967]  INFO -- webserver-ubuntu-1404: /opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.2.0/lib/chef/client.rb:278:in `run'
+I, [2018-06-21T10:36:58.662371 #28967]  INFO -- webserver-ubuntu-1404: /opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.2.0/lib/chef/application.rb:303:in `run_with_graceful_exit_option'
+I, [2018-06-21T10:36:58.662520 #28967]  INFO -- webserver-ubuntu-1404: /opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.2.0/lib/chef/application.rb:279:in `block in run_chef_client'
+I, [2018-06-21T10:36:58.725393 #28967]  INFO -- webserver-ubuntu-1404: /opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.2.0/lib/chef/local_mode.rb:44:in `with_server_connectivity'
+I, [2018-06-21T10:36:58.725623 #28967]  INFO -- webserver-ubuntu-1404: /opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.2.0/lib/chef/application.rb:261:in `run_chef_client'
+I, [2018-06-21T10:36:58.725781 #28967]  INFO -- webserver-ubuntu-1404: /opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.2.0/lib/chef/application/client.rb:441:in `run_application'
+I, [2018-06-21T10:36:58.725946 #28967]  INFO -- webserver-ubuntu-1404: /opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.2.0/lib/chef/application.rb:66:in `run'
+I, [2018-06-21T10:36:58.726096 #28967]  INFO -- webserver-ubuntu-1404: /opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.2.0/bin/chef-client:26:in `<top (required)>'
+I, [2018-06-21T10:36:58.726245 #28967]  INFO -- webserver-ubuntu-1404: /opt/chef/bin/chef-client:75:in `load'
+I, [2018-06-21T10:36:58.727480 #28967]  INFO -- webserver-ubuntu-1404: /opt/chef/bin/chef-client:75:in `<main>'
+I, [2018-06-21T10:36:58.727599 #28967]  INFO -- webserver-ubuntu-1404: 
+I, [2018-06-21T10:36:58.727745 #28967]  INFO -- webserver-ubuntu-1404: ================================================================================
+I, [2018-06-21T10:36:58.727900 #28967]  INFO -- webserver-ubuntu-1404: Error Resolving Cookbooks for Run List:
+I, [2018-06-21T10:36:58.728047 #28967]  INFO -- webserver-ubuntu-1404: ================================================================================
+I, [2018-06-21T10:36:58.728154 #28967]  INFO -- webserver-ubuntu-1404: 
+I, [2018-06-21T10:36:58.728307 #28967]  INFO -- webserver-ubuntu-1404: Unknown Server Error:
+I, [2018-06-21T10:36:58.728462 #28967]  INFO -- webserver-ubuntu-1404: ---------------------
+I, [2018-06-21T10:36:58.728598 #28967]  INFO -- webserver-ubuntu-1404: The server had a fatal error attempting to load the node data.
+I, [2018-06-21T10:36:58.728696 #28967]  INFO -- webserver-ubuntu-1404: 
+I, [2018-06-21T10:36:58.728882 #28967]  INFO -- webserver-ubuntu-1404: Server Response:
+I, [2018-06-21T10:36:58.729018 #28967]  INFO -- webserver-ubuntu-1404: ----------------
+I, [2018-06-21T10:36:58.729169 #28967]  INFO -- webserver-ubuntu-1404: Exception raised! #<ArgumentError: Malformed version number string 0.12.>
+I, [2018-06-21T10:36:58.729304 #28967]  INFO -- webserver-ubuntu-1404: /opt/chef/embedded/lib/ruby/2.5.0/rubygems/version.rb:208:in `initialize'
+I, [2018-06-21T10:36:58.729455 #28967]  INFO -- webserver-ubuntu-1404: /opt/chef/embedded/lib/ruby/2.5.0/rubygems/version.rb:199:in `new'
+I, [2018-06-21T10:36:58.729592 #28967]  INFO -- webserver-ubuntu-1404: /opt/chef/embedded/lib/ruby/2.5.0/rubygems/version.rb:199:in `new'
+I, [2018-06-21T10:36:58.729819 #28967]  INFO -- webserver-ubuntu-1404: /opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-zero-14.0.6/lib/chef_zero/endpoints/environment_cookbook_versions_endpoint.rb:108:in `block in sort_versions'
+I, [2018-06-21T10:36:58.729995 #28967]  INFO -- webserver-ubuntu-1404: /opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-zero-14.0.6/lib/chef_zero/endpoints/environment_cookbook_versions_endpoint.rb:108:in `each'
+I, [2018-06-21T10:36:58.730138 #28967]  INFO -- webserver-ubuntu-1404: /opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-zero-14.0.6/lib/chef_zero/endpoints/environment_cookbook_versions_endpoint.rb:108:in `sort_by'
+I, [2018-06-21T10:36:58.730320 #28967]  INFO -- webserver-ubuntu-1404: /opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-zero-14.0.6/lib/chef_zero/endpoints/environment_cookbook_versions_endpoint.rb:108:in `sort_versions'
+I, [2018-06-21T10:36:58.730465 #28967]  INFO -- webserver-ubuntu-1404: /opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-zero-14.0.6/lib/chef_zero/endpoints/environment_cookbook_versions_endpoint.rb:71:in `depsolve'
+I, [2018-06-21T10:36:58.730754 #28967]  INFO -- webserver-ubuntu-1404: /opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-zero-14.0.6/lib/chef_zero/endpoints/environment_cookbook_versions_endpoint.rb:37:in `post'
+I, [2018-06-21T10:36:58.730896 #28967]  INFO -- webserver-ubuntu-1404: /opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-zero-14.0.6/lib/chef_zero/rest_base.rb:59:in `call'
+I, [2018-06-21T10:36:58.731032 #28967]  INFO -- webserver-ubuntu-1404: /opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-zero-14.0.6/lib/chef_zero/rest_router.rb:24:in `call'
+I, [2018-06-21T10:36:58.731196 #28967]  INFO -- webserver-ubuntu-1404: /opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-zero-14.0.6/lib/chef_zero/server.rb:665:in `block in app'
+I, [2018-06-21T10:36:58.731331 #28967]  INFO -- webserver-ubuntu-1404: /opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-zero-14.0.6/lib/chef_zero/server.rb:336:in `handle_socketless_request'
+I, [2018-06-21T10:36:58.731519 #28967]  INFO -- webserver-ubuntu-1404: /opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-zero-14.0.6/lib/chef_zero/socketless_server_map.rb:87:in `request'
+I, [2018-06-21T10:36:58.731721 #28967]  INFO -- webserver-ubuntu-1404: /opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-zero-14.0.6/lib/chef_zero/socketless_server_map.rb:33:in `request'
+I, [2018-06-21T10:36:58.731886 #28967]  INFO -- webserver-ubuntu-1404: /opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.2.0/lib/chef/http/socketless_chef_zero_client.rb:154:in `request'
+I, [2018-06-21T10:36:58.732069 #28967]  INFO -- webserver-ubuntu-1404: /opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.2.0/lib/chef/http.rb:372:in `block in send_http_request'
+I, [2018-06-21T10:36:58.732208 #28967]  INFO -- webserver-ubuntu-1404: /opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.2.0/lib/chef/http.rb:411:in `block in retrying_http_errors'
+I, [2018-06-21T10:36:58.732366 #28967]  INFO -- webserver-ubuntu-1404: /opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.2.0/lib/chef/http.rb:409:in `loop'
+I, [2018-06-21T10:36:58.732501 #28967]  INFO -- webserver-ubuntu-1404: /opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.2.0/lib/chef/http.rb:409:in `retrying_http_errors'
+I, [2018-06-21T10:36:58.732636 #28967]  INFO -- webserver-ubuntu-1404: /opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.2.0/lib/chef/http.rb:365:in `send_http_request'
+I, [2018-06-21T10:36:58.732828 #28967]  INFO -- webserver-ubuntu-1404: /opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.2.0/lib/chef/http.rb:149:in `request'
+I, [2018-06-21T10:36:58.732967 #28967]  INFO -- webserver-ubuntu-1404: /opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.2.0/lib/chef/http.rb:131:in `post'
+I, [2018-06-21T10:36:58.733136 #28967]  INFO -- webserver-ubuntu-1404: /opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.2.0/lib/chef/policy_builder/expand_node_object.rb:177:in `sync_cookbooks'
+I, [2018-06-21T10:36:58.733278 #28967]  INFO -- webserver-ubuntu-1404: /opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.2.0/lib/chef/policy_builder/expand_node_object.rb:83:in `setup_run_context'
+I, [2018-06-21T10:36:58.733449 #28967]  INFO -- webserver-ubuntu-1404: /opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.2.0/lib/chef/client.rb:512:in `setup_run_context'
+I, [2018-06-21T10:36:58.733586 #28967]  INFO -- webserver-ubuntu-1404: /opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.2.0/lib/chef/client.rb:278:in `run'
+I, [2018-06-21T10:36:58.733739 #28967]  INFO -- webserver-ubuntu-1404: /opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.2.0/lib/chef/application.rb:303:in `run_with_graceful_exit_option'
+I, [2018-06-21T10:36:58.733878 #28967]  INFO -- webserver-ubuntu-1404: /opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.2.0/lib/chef/application.rb:279:in `block in run_chef_client'
+I, [2018-06-21T10:36:58.734049 #28967]  INFO -- webserver-ubuntu-1404: /opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.2.0/lib/chef/local_mode.rb:44:in `with_server_connectivity'
+I, [2018-06-21T10:36:58.734187 #28967]  INFO -- webserver-ubuntu-1404: /opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.2.0/lib/chef/application.rb:261:in `run_chef_client'
+I, [2018-06-21T10:36:58.734328 #28967]  INFO -- webserver-ubuntu-1404: /opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.2.0/lib/chef/application/client.rb:441:in `run_application'
+I, [2018-06-21T10:36:58.734504 #28967]  INFO -- webserver-ubuntu-1404: /opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.2.0/lib/chef/application.rb:66:in `run'
+I, [2018-06-21T10:36:58.734644 #28967]  INFO -- webserver-ubuntu-1404: /opt/chef/embedded/lib/ruby/gems/2.5.0/gems/chef-14.2.0/bin/chef-client:26:in `<top (required)>'
+I, [2018-06-21T10:36:58.734800 #28967]  INFO -- webserver-ubuntu-1404: /opt/chef/bin/chef-client:75:in `load'
+I, [2018-06-21T10:36:58.734934 #28967]  INFO -- webserver-ubuntu-1404: /opt/chef/bin/chef-client:75:in `<main>'
+I, [2018-06-21T10:36:58.735031 #28967]  INFO -- webserver-ubuntu-1404: 
+I, [2018-06-21T10:36:58.735174 #28967]  INFO -- webserver-ubuntu-1404: System Info:
+I, [2018-06-21T10:36:58.735305 #28967]  INFO -- webserver-ubuntu-1404: ------------
+I, [2018-06-21T10:36:58.735434 #28967]  INFO -- webserver-ubuntu-1404: chef_version=14.2.0
+I, [2018-06-21T10:36:58.735598 #28967]  INFO -- webserver-ubuntu-1404: platform=ubuntu
+I, [2018-06-21T10:36:58.735729 #28967]  INFO -- webserver-ubuntu-1404: platform_version=14.04
+I, [2018-06-21T10:36:58.735861 #28967]  INFO -- webserver-ubuntu-1404: ruby=ruby 2.5.1p57 (2018-03-29 revision 63029) [x86_64-linux]
+I, [2018-06-21T10:36:58.736027 #28967]  INFO -- webserver-ubuntu-1404: program_name=/opt/chef/bin/chef-client
+I, [2018-06-21T10:36:58.736160 #28967]  INFO -- webserver-ubuntu-1404: executable=/opt/chef/bin/chef-client
+I, [2018-06-21T10:36:58.736257 #28967]  INFO -- webserver-ubuntu-1404: 
+I, [2018-06-21T10:36:58.736397 #28967]  INFO -- webserver-ubuntu-1404: 
+I, [2018-06-21T10:36:58.736533 #28967]  INFO -- webserver-ubuntu-1404: Running handlers:
+I, [2018-06-21T10:36:58.736664 #28967]  INFO -- webserver-ubuntu-1404: [2018-06-21T10:39:19+00:00] ERROR: Running exception handlers
+I, [2018-06-21T10:36:58.736837 #28967]  INFO -- webserver-ubuntu-1404: Running handlers complete
+I, [2018-06-21T10:36:58.736971 #28967]  INFO -- webserver-ubuntu-1404: [2018-06-21T10:39:19+00:00] ERROR: Exception handlers complete
+I, [2018-06-21T10:36:58.737128 #28967]  INFO -- webserver-ubuntu-1404: Chef Client failed. 0 resources updated in 01 seconds
+I, [2018-06-21T10:36:58.737267 #28967]  INFO -- webserver-ubuntu-1404: [2018-06-21T10:39:19+00:00] FATAL: Stacktrace dumped to /tmp/kitchen/cache/chef-stacktrace.out
+I, [2018-06-21T10:36:58.737424 #28967]  INFO -- webserver-ubuntu-1404: [2018-06-21T10:39:19+00:00] FATAL: Please provide the contents of the stacktrace.out file if you file a bug report
+I, [2018-06-21T10:36:58.737559 #28967]  INFO -- webserver-ubuntu-1404: [2018-06-21T10:39:19+00:00] FATAL: Net::HTTPFatalError: 500 "Internal Server Error"
+E, [2018-06-21T10:36:58.738544 #28967] ERROR -- webserver-ubuntu-1404: Converge failed on instance <webserver-ubuntu-1404>.
+E, [2018-06-21T10:36:58.738646 #28967] ERROR -- webserver-ubuntu-1404: ------Exception-------
+E, [2018-06-21T10:36:58.738665 #28967] ERROR -- webserver-ubuntu-1404: Class: Kitchen::ActionFailed
+E, [2018-06-21T10:36:58.738677 #28967] ERROR -- webserver-ubuntu-1404: Message: SSH exited (1) for command: [sh -c '
+TEST_KITCHEN="1"; export TEST_KITCHEN
+sudo -E /opt/chef/bin/chef-client --local-mode --config /tmp/kitchen/client.rb --log_level auto --force-formatter --no-color --json-attributes /tmp/kitchen/dna.json --chef-zero-port 8889 
+']
+E, [2018-06-21T10:36:58.738686 #28967] ERROR -- webserver-ubuntu-1404: ----------------------
+E, [2018-06-21T10:36:58.738695 #28967] ERROR -- webserver-ubuntu-1404: ------Backtrace-------
+E, [2018-06-21T10:36:58.738704 #28967] ERROR -- webserver-ubuntu-1404: /root/.chefdk/gem/ruby/2.3.0/gems/test-kitchen-1.21.2/lib/kitchen/provisioner/base.rb:91:in `rescue in call'
+E, [2018-06-21T10:36:58.738714 #28967] ERROR -- webserver-ubuntu-1404: /root/.chefdk/gem/ruby/2.3.0/gems/test-kitchen-1.21.2/lib/kitchen/provisioner/base.rb:94:in `call'
+E, [2018-06-21T10:36:58.738723 #28967] ERROR -- webserver-ubuntu-1404: /root/.chefdk/gem/ruby/2.3.0/gems/test-kitchen-1.21.2/lib/kitchen/instance.rb:393:in `block in converge_action'
+E, [2018-06-21T10:36:58.738738 #28967] ERROR -- webserver-ubuntu-1404: /root/.chefdk/gem/ruby/2.3.0/gems/test-kitchen-1.21.2/lib/kitchen/instance.rb:536:in `synchronize_or_call'
+E, [2018-06-21T10:36:58.738747 #28967] ERROR -- webserver-ubuntu-1404: /root/.chefdk/gem/ruby/2.3.0/gems/test-kitchen-1.21.2/lib/kitchen/instance.rb:498:in `block in action'
+E, [2018-06-21T10:36:58.738757 #28967] ERROR -- webserver-ubuntu-1404: /opt/chefdk/embedded/lib/ruby/2.3.0/benchmark.rb:293:in `measure'
+E, [2018-06-21T10:36:58.738766 #28967] ERROR -- webserver-ubuntu-1404: /root/.chefdk/gem/ruby/2.3.0/gems/test-kitchen-1.21.2/lib/kitchen/instance.rb:497:in `action'
+E, [2018-06-21T10:36:58.738775 #28967] ERROR -- webserver-ubuntu-1404: /root/.chefdk/gem/ruby/2.3.0/gems/test-kitchen-1.21.2/lib/kitchen/instance.rb:389:in `converge_action'
+E, [2018-06-21T10:36:58.738784 #28967] ERROR -- webserver-ubuntu-1404: /root/.chefdk/gem/ruby/2.3.0/gems/test-kitchen-1.21.2/lib/kitchen/instance.rb:368:in `block in transition_to'
+E, [2018-06-21T10:36:58.738793 #28967] ERROR -- webserver-ubuntu-1404: /root/.chefdk/gem/ruby/2.3.0/gems/test-kitchen-1.21.2/lib/kitchen/instance.rb:367:in `each'
+E, [2018-06-21T10:36:58.738802 #28967] ERROR -- webserver-ubuntu-1404: /root/.chefdk/gem/ruby/2.3.0/gems/test-kitchen-1.21.2/lib/kitchen/instance.rb:367:in `transition_to'
+E, [2018-06-21T10:36:58.738811 #28967] ERROR -- webserver-ubuntu-1404: /root/.chefdk/gem/ruby/2.3.0/gems/test-kitchen-1.21.2/lib/kitchen/instance.rb:157:in `verify'
+E, [2018-06-21T10:36:58.738820 #28967] ERROR -- webserver-ubuntu-1404: /root/.chefdk/gem/ruby/2.3.0/gems/test-kitchen-1.21.2/lib/kitchen/instance.rb:186:in `block in test'
+E, [2018-06-21T10:36:58.738829 #28967] ERROR -- webserver-ubuntu-1404: /opt/chefdk/embedded/lib/ruby/2.3.0/benchmark.rb:293:in `measure'
+E, [2018-06-21T10:36:58.738838 #28967] ERROR -- webserver-ubuntu-1404: /root/.chefdk/gem/ruby/2.3.0/gems/test-kitchen-1.21.2/lib/kitchen/instance.rb:182:in `test'
+E, [2018-06-21T10:36:58.738847 #28967] ERROR -- webserver-ubuntu-1404: /root/.chefdk/gem/ruby/2.3.0/gems/test-kitchen-1.21.2/lib/kitchen/command.rb:197:in `public_send'
+E, [2018-06-21T10:36:58.738863 #28967] ERROR -- webserver-ubuntu-1404: /root/.chefdk/gem/ruby/2.3.0/gems/test-kitchen-1.21.2/lib/kitchen/command.rb:197:in `run_action_in_thread'
+E, [2018-06-21T10:36:58.738874 #28967] ERROR -- webserver-ubuntu-1404: /root/.chefdk/gem/ruby/2.3.0/gems/test-kitchen-1.21.2/lib/kitchen/command.rb:169:in `block (2 levels) in run_action'
+E, [2018-06-21T10:36:58.738883 #28967] ERROR -- webserver-ubuntu-1404: ----End Backtrace-----
+E, [2018-06-21T10:36:58.738892 #28967] ERROR -- webserver-ubuntu-1404: ---Nested Exception---
+E, [2018-06-21T10:36:58.738900 #28967] ERROR -- webserver-ubuntu-1404: Class: Kitchen::Transport::SshFailed
+E, [2018-06-21T10:36:58.738908 #28967] ERROR -- webserver-ubuntu-1404: Message: SSH exited (1) for command: [sh -c '
+TEST_KITCHEN="1"; export TEST_KITCHEN
+sudo -E /opt/chef/bin/chef-client --local-mode --config /tmp/kitchen/client.rb --log_level auto --force-formatter --no-color --json-attributes /tmp/kitchen/dna.json --chef-zero-port 8889 
+']
+E, [2018-06-21T10:36:58.738917 #28967] ERROR -- webserver-ubuntu-1404: ----------------------
+E, [2018-06-21T10:36:58.738926 #28967] ERROR -- webserver-ubuntu-1404: ------Backtrace-------
+E, [2018-06-21T10:36:58.738934 #28967] ERROR -- webserver-ubuntu-1404: /root/.chefdk/gem/ruby/2.3.0/gems/test-kitchen-1.21.2/lib/kitchen/provisioner/base.rb:91:in `rescue in call'
+E, [2018-06-21T10:36:58.738943 #28967] ERROR -- webserver-ubuntu-1404: /root/.chefdk/gem/ruby/2.3.0/gems/test-kitchen-1.21.2/lib/kitchen/provisioner/base.rb:94:in `call'
+E, [2018-06-21T10:36:58.738952 #28967] ERROR -- webserver-ubuntu-1404: /root/.chefdk/gem/ruby/2.3.0/gems/test-kitchen-1.21.2/lib/kitchen/instance.rb:393:in `block in converge_action'
+E, [2018-06-21T10:36:58.738961 #28967] ERROR -- webserver-ubuntu-1404: /root/.chefdk/gem/ruby/2.3.0/gems/test-kitchen-1.21.2/lib/kitchen/instance.rb:536:in `synchronize_or_call'
+E, [2018-06-21T10:36:58.738970 #28967] ERROR -- webserver-ubuntu-1404: /root/.chefdk/gem/ruby/2.3.0/gems/test-kitchen-1.21.2/lib/kitchen/instance.rb:498:in `block in action'
+E, [2018-06-21T10:36:58.738979 #28967] ERROR -- webserver-ubuntu-1404: /opt/chefdk/embedded/lib/ruby/2.3.0/benchmark.rb:293:in `measure'
+E, [2018-06-21T10:36:58.738988 #28967] ERROR -- webserver-ubuntu-1404: /root/.chefdk/gem/ruby/2.3.0/gems/test-kitchen-1.21.2/lib/kitchen/instance.rb:497:in `action'
+E, [2018-06-21T10:36:58.738997 #28967] ERROR -- webserver-ubuntu-1404: /root/.chefdk/gem/ruby/2.3.0/gems/test-kitchen-1.21.2/lib/kitchen/instance.rb:389:in `converge_action'
+E, [2018-06-21T10:36:58.739006 #28967] ERROR -- webserver-ubuntu-1404: /root/.chefdk/gem/ruby/2.3.0/gems/test-kitchen-1.21.2/lib/kitchen/instance.rb:368:in `block in transition_to'
+E, [2018-06-21T10:36:58.739015 #28967] ERROR -- webserver-ubuntu-1404: /root/.chefdk/gem/ruby/2.3.0/gems/test-kitchen-1.21.2/lib/kitchen/instance.rb:367:in `each'
+E, [2018-06-21T10:36:58.739024 #28967] ERROR -- webserver-ubuntu-1404: /root/.chefdk/gem/ruby/2.3.0/gems/test-kitchen-1.21.2/lib/kitchen/instance.rb:367:in `transition_to'
+E, [2018-06-21T10:36:58.739057 #28967] ERROR -- webserver-ubuntu-1404: /root/.chefdk/gem/ruby/2.3.0/gems/test-kitchen-1.21.2/lib/kitchen/instance.rb:157:in `verify'
+E, [2018-06-21T10:36:58.739067 #28967] ERROR -- webserver-ubuntu-1404: /root/.chefdk/gem/ruby/2.3.0/gems/test-kitchen-1.21.2/lib/kitchen/instance.rb:186:in `block in test'
+E, [2018-06-21T10:36:58.739076 #28967] ERROR -- webserver-ubuntu-1404: /opt/chefdk/embedded/lib/ruby/2.3.0/benchmark.rb:293:in `measure'
+E, [2018-06-21T10:36:58.739085 #28967] ERROR -- webserver-ubuntu-1404: /root/.chefdk/gem/ruby/2.3.0/gems/test-kitchen-1.21.2/lib/kitchen/instance.rb:182:in `test'
+E, [2018-06-21T10:36:58.739094 #28967] ERROR -- webserver-ubuntu-1404: /root/.chefdk/gem/ruby/2.3.0/gems/test-kitchen-1.21.2/lib/kitchen/command.rb:197:in `public_send'
+E, [2018-06-21T10:36:58.739103 #28967] ERROR -- webserver-ubuntu-1404: /root/.chefdk/gem/ruby/2.3.0/gems/test-kitchen-1.21.2/lib/kitchen/command.rb:197:in `run_action_in_thread'
+E, [2018-06-21T10:36:58.739116 #28967] ERROR -- webserver-ubuntu-1404: /root/.chefdk/gem/ruby/2.3.0/gems/test-kitchen-1.21.2/lib/kitchen/command.rb:169:in `block (2 levels) in run_action'
+E, [2018-06-21T10:36:58.739125 #28967] ERROR -- webserver-ubuntu-1404: ----End Backtrace-----

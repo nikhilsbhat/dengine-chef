@@ -1,0 +1,31 @@
+{
+  "name": "mtc-demo-jenkins",
+  "description": "This role is responsible for installation/configuration/plugins-installation/job-setup/master-slave configuration in jenkins",
+  "json_class": "Chef::Role",
+  "default_attributes": {
+
+  },
+  "override_attributes": {
+    "jenkins": {
+      "master": {
+        "install_method": "war",
+        "channel": "stable-1.651",
+        "version": "1.652",
+        "runit": {
+          "sv_timeout": 360
+        }
+      }
+    }
+  },
+  "chef_type": "role",
+  "run_list": [
+    "recipe[copy-jenkins::default]",
+    "recipe[jenkins::master]",
+    "recipe[pluginjenkins::test_plugin]",
+    "recipe[dengine_users::default]",
+    "recipe[copy-jenkins::remove]"
+  ],
+  "env_run_lists": {
+
+  }
+}

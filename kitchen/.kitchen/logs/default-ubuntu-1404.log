@@ -1,0 +1,33 @@
+I, [2018-06-29T07:42:39.343411 #14040]  INFO -- default-ubuntu-1404: -----> Destroying <default-ubuntu-1404>...
+E, [2018-06-29T07:42:40.260557 #14040] ERROR -- default-ubuntu-1404: Destroy failed on instance <default-ubuntu-1404>.
+E, [2018-06-29T07:42:40.261074 #14040] ERROR -- default-ubuntu-1404: ------Exception-------
+E, [2018-06-29T07:42:40.261101 #14040] ERROR -- default-ubuntu-1404: Class: Aws::EC2::Errors::InvalidInstanceIDNotFound
+E, [2018-06-29T07:42:40.261114 #14040] ERROR -- default-ubuntu-1404: Message: The instance ID 'i-0173c946959b0fca4' does not exist
+E, [2018-06-29T07:42:40.261123 #14040] ERROR -- default-ubuntu-1404: ----------------------
+E, [2018-06-29T07:42:40.261132 #14040] ERROR -- default-ubuntu-1404: ------Backtrace-------
+E, [2018-06-29T07:42:40.261158 #14040] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/aws-sdk-core-2.7.3/lib/seahorse/client/plugins/raise_response_errors.rb:15:in `call'
+E, [2018-06-29T07:42:40.261171 #14040] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/aws-sdk-core-2.7.3/lib/aws-sdk-core/plugins/idempotency_token.rb:18:in `call'
+E, [2018-06-29T07:42:40.261181 #14040] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/aws-sdk-core-2.7.3/lib/aws-sdk-core/plugins/param_converter.rb:20:in `call'
+E, [2018-06-29T07:42:40.261190 #14040] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/aws-sdk-core-2.7.3/lib/seahorse/client/plugins/response_target.rb:21:in `call'
+E, [2018-06-29T07:42:40.261204 #14040] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/aws-sdk-core-2.7.3/lib/seahorse/client/request.rb:70:in `send_request'
+E, [2018-06-29T07:42:40.261215 #14040] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/aws-sdk-core-2.7.3/lib/seahorse/client/base.rb:207:in `block (2 levels) in define_operation_methods'
+E, [2018-06-29T07:42:40.261225 #14040] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/aws-sdk-resources-2.7.3/lib/aws-sdk-resources/request.rb:24:in `call'
+E, [2018-06-29T07:42:40.261234 #14040] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/aws-sdk-resources-2.7.3/lib/aws-sdk-resources/operations.rb:41:in `call'
+E, [2018-06-29T07:42:40.261244 #14040] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/lib/ruby/gems/2.3.0/gems/aws-sdk-resources-2.7.3/lib/aws-sdk-resources/operation_methods.rb:19:in `block in add_operation'
+E, [2018-06-29T07:42:40.261253 #14040] ERROR -- default-ubuntu-1404: /root/.chefdk/gem/ruby/2.3.0/gems/kitchen-ec2-2.0.0/lib/kitchen/driver/ec2.rb:245:in `destroy'
+E, [2018-06-29T07:42:40.261262 #14040] ERROR -- default-ubuntu-1404: /root/.chefdk/gem/ruby/2.3.0/gems/test-kitchen-1.21.2/lib/kitchen/instance.rb:469:in `public_send'
+E, [2018-06-29T07:42:40.261271 #14040] ERROR -- default-ubuntu-1404: /root/.chefdk/gem/ruby/2.3.0/gems/test-kitchen-1.21.2/lib/kitchen/instance.rb:469:in `block in perform_action'
+E, [2018-06-29T07:42:40.261280 #14040] ERROR -- default-ubuntu-1404: /root/.chefdk/gem/ruby/2.3.0/gems/test-kitchen-1.21.2/lib/kitchen/instance.rb:536:in `synchronize_or_call'
+E, [2018-06-29T07:42:40.261293 #14040] ERROR -- default-ubuntu-1404: /root/.chefdk/gem/ruby/2.3.0/gems/test-kitchen-1.21.2/lib/kitchen/instance.rb:498:in `block in action'
+E, [2018-06-29T07:42:40.261303 #14040] ERROR -- default-ubuntu-1404: /opt/chefdk/embedded/lib/ruby/2.3.0/benchmark.rb:293:in `measure'
+E, [2018-06-29T07:42:40.261313 #14040] ERROR -- default-ubuntu-1404: /root/.chefdk/gem/ruby/2.3.0/gems/test-kitchen-1.21.2/lib/kitchen/instance.rb:497:in `action'
+E, [2018-06-29T07:42:40.261322 #14040] ERROR -- default-ubuntu-1404: /root/.chefdk/gem/ruby/2.3.0/gems/test-kitchen-1.21.2/lib/kitchen/instance.rb:469:in `perform_action'
+E, [2018-06-29T07:42:40.261331 #14040] ERROR -- default-ubuntu-1404: /root/.chefdk/gem/ruby/2.3.0/gems/test-kitchen-1.21.2/lib/kitchen/instance.rb:456:in `destroy_action'
+E, [2018-06-29T07:42:40.261341 #14040] ERROR -- default-ubuntu-1404: /root/.chefdk/gem/ruby/2.3.0/gems/test-kitchen-1.21.2/lib/kitchen/instance.rb:368:in `block in transition_to'
+E, [2018-06-29T07:42:40.261362 #14040] ERROR -- default-ubuntu-1404: /root/.chefdk/gem/ruby/2.3.0/gems/test-kitchen-1.21.2/lib/kitchen/instance.rb:367:in `each'
+E, [2018-06-29T07:42:40.261373 #14040] ERROR -- default-ubuntu-1404: /root/.chefdk/gem/ruby/2.3.0/gems/test-kitchen-1.21.2/lib/kitchen/instance.rb:367:in `transition_to'
+E, [2018-06-29T07:42:40.261383 #14040] ERROR -- default-ubuntu-1404: /root/.chefdk/gem/ruby/2.3.0/gems/test-kitchen-1.21.2/lib/kitchen/instance.rb:168:in `destroy'
+E, [2018-06-29T07:42:40.261392 #14040] ERROR -- default-ubuntu-1404: /root/.chefdk/gem/ruby/2.3.0/gems/test-kitchen-1.21.2/lib/kitchen/command.rb:197:in `public_send'
+E, [2018-06-29T07:42:40.261405 #14040] ERROR -- default-ubuntu-1404: /root/.chefdk/gem/ruby/2.3.0/gems/test-kitchen-1.21.2/lib/kitchen/command.rb:197:in `run_action_in_thread'
+E, [2018-06-29T07:42:40.261415 #14040] ERROR -- default-ubuntu-1404: /root/.chefdk/gem/ruby/2.3.0/gems/test-kitchen-1.21.2/lib/kitchen/command.rb:169:in `block (2 levels) in run_action'
+E, [2018-06-29T07:42:40.261424 #14040] ERROR -- default-ubuntu-1404: ----End Backtrace-----

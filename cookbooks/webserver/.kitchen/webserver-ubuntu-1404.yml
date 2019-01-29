@@ -1,0 +1,5 @@
+---
+server_id: i-0ad050f69e285838b
+hostname: ec2-35-154-184-135.ap-south-1.compute.amazonaws.com
+last_action: create
+last_error: Kitchen::ActionFailed

@@ -1,0 +1,31 @@
+{
+  "name": "neuron",
+  "description": "This role will take care of configuration of application",
+  "json_class": "Chef::Role",
+  "default_attributes": {
+
+  },
+  "override_attributes": {
+    "application": {
+	  "artifact": {
+         "version": "1.0",
+         "name"   : "gameoflife-web"
+	  }
+	},
+    "artifactory": {
+      "domain": {
+        "username": "admin",
+        "password": "password",
+        "name"    : "13.232.42.255"
+      }
+	}
+  },
+  "chef_type": "role",
+  "run_list": [
+    "role[dengine_java]",
+    "recipe[neuron]"
+  ],
+  "env_run_lists": {
+
+  }
+}

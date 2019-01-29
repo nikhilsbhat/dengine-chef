@@ -1,0 +1,19 @@
+{
+  "id": "management_servers",
+  "monitering": {
+    "node_name": "GOL-sensu-management",
+    "url": "GOL-sensu-management"
+  },
+  "artifactory": {
+    "node_name": "GOL-jfrog-management",
+    "url": "GOL-jfrog-management"
+  },
+  "jenkins": {
+    "node_name": "GOL-jenkins-management",
+    "url": "GOL-jenkins-management"
+  },
+  "splunk": {
+    "node_name": "GOL-splunk-management",
+    "url": "GOL-splunk-management"
+  }
+}

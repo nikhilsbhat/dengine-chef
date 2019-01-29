@@ -1,0 +1,33 @@
+---
+driver:
+  name: ec2
+  aws_ssh_key_id: chef-coe-ind
+  security_group_ids: ["sg-db4fa7b0"]
+  region: ap-south-1
+  availability_zone: a
+  require_chef_omnibus: true
+  instance_type: t2.micro
+  associate_public_ip: true
+  subnet_id: subnet-d81893b1
+
+provisioner:
+  name: chef_zero
+  cookbook_path: /root/chef-repo/cookbooks/
+  roles_path: /root/chef-repo/roles/
+  environments_path: /root/chef-repo/environments/
+  data_bags_path: /root/chef-repo/data_bags/
+  client_rb:
+    environment: _default
+
+platforms:
+  - name: sensu
+    driver:
+      image_id: ami-46eea129
+    transport:
+      ssh_key: /root/chef-repo/.chef/pun-chef-ind.pem
+      username: ubuntu
+
+suites:
+  - name: default
+    run_list:
+    - recipe[dengine_sensu::default]
